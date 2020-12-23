@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.liuzhihang.toolkit.mybatis-jump</id>
-    <name>Mybatis Jump</name>
+    <name>MyBatis Jump</name>
     <vendor email="liuzhihangs@qq.com" url="https://liuzhihang.com">Liu ZhiHang</vendor>
 
     <description><![CDATA[

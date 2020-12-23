@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.6.5'
+}
+
+group 'com.liuzhihang'
+version '1.0.0'
+
+repositories {
+    mavenLocal()
+    maven { url "https://maven.aliyun.com/repository/public" }
+    mavenCentral()
+    jcenter()
+
+}
+
+dependencies {
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2020.2'
+    pluginName 'MyBatis Jump'
+    plugins = ['java']
+    updateSinceUntilBuild false
+    sameSinceUntilBuild false
+}
+patchPluginXml {
+    changeNotes """ 
+    Use the sidebar arrows to jump between MyBatis XML files and Mapper files.
+    <br>
+    仅仅只有在 Mapper XML 和 Java 文件之间跳转的功能 
+    """
+}
+test {
+    useJUnitPlatform()
+}

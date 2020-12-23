@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>com.liuzhihang.toolkit.mybatis-jump</id>
+    <name>Mybatis Jump</name>
+    <vendor email="liuzhihangs@qq.com" url="https://liuzhihang.com">Liu ZhiHang</vendor>
+
+    <description><![CDATA[
+    Use the sidebar arrows to jump between MyBatis XML files and Mapper files
+    <br>
+    仅仅只有在 Mapper XML 和 Java 文件之间跳转的功能
+    ]]>
+    </description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <!-- 兼容版本 -->
+    <idea-version since-build="191.00"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <dom.fileMetaData implementation="com.liuzhihang.toolkit.description.MapperDescription" rootTagName="mapper"/>
+        <codeInsight.lineMarkerProvider language="JAVA"
+                                        implementationClass="com.liuzhihang.toolkit.provider.Java2MapperLineMarkerProvider"/>
+        <codeInsight.lineMarkerProvider language="XML"
+                                        implementationClass="com.liuzhihang.toolkit.provider.Mapper2JavaLineMarkerProvider"/>
+        <definitionsScopedSearch implementation="com.liuzhihang.toolkit.search.MapperDefinitionSearch"/>
+        <localInspection language="XML" shortName="ToolkitMapperXmlInspection" enabledByDefault="true" level="ERROR"
+                         displayName="Mapper xml inspection" groupName="Mybatis"
+                         implementationClass="com.liuzhihang.toolkit.inspection.MapperXmlInspection"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

@@ -4,9 +4,18 @@
     <vendor email="liuzhihangs@qq.com" url="https://liuzhihang.com">Liu ZhiHang</vendor>
 
     <description><![CDATA[
-    Use the sidebar arrows to jump between MyBatis XML files and Mapper files
-    <br>
-    仅仅只有在 Mapper XML 和 Java 文件之间跳转的功能
+    <li>
+        <ul>
+            <li>Jump between Mapper and Xml files through the icon in the sidebar</li>
+            <li>mapper file id simple check</li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+            <li>通过侧边栏中的图标在Mapper和Xml文件之间跳转</li>
+            <li>MyBatis xml id 简单检查</li>
+        </ul>
+    </li>
     ]]>
     </description>
 

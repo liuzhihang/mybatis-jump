@@ -1,9 +1,9 @@
 Toolkit
 =======
 
-[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/15670-mybatis-jump.svg)](https://plugins.jetbrains.com/plugin/15670-mybatis-jump)
-[![Version](http://phpstorm.espend.de/badge/12384/version)](https://plugins.jetbrains.com/plugin/15670-mybatis-jump/versions)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/15670-mybatis-jump.svg)](https://plugins.jetbrains.com/plugin/15670-mybatis-jump)
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/15674-mybatis-jump.svg)](https://plugins.jetbrains.com/plugin/15674-mybatis-jump)
+[![Version](http://phpstorm.espend.de/badge/12384/version)](https://plugins.jetbrains.com/plugin/15674-mybatis-jump/versions)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/15674-mybatis-jump.svg)](https://plugins.jetbrains.com/plugin/15674-mybatis-jump)
 [![License](https://img.shields.io/badge/license-MIT-red.svg)](https://github.com/liuzhihang/mybatis-jump/blob/master/LICENSE)
 
 一个小工具包, 暂时还有很多功能需要扩展.

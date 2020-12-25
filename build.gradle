@@ -25,13 +25,13 @@ intellij {
     updateSinceUntilBuild false
     sameSinceUntilBuild false
 }
-patchPluginXml {
-    changeNotes """ 
-    Use the sidebar arrows to jump between MyBatis XML files and Mapper files.
-    <br>
-    仅仅只有在 Mapper XML 和 Java 文件之间跳转的功能 
-    """
-}
+
 test {
     useJUnitPlatform()
+}
+
+patchPluginXml {
+
+    pluginDescription(file(descriptionFile).text)
+    changeNotes(file(changesFile).text)
 }

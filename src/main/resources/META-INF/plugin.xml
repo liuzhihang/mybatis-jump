@@ -1,4 +1,4 @@
-<idea-plugin>
+<idea-plugin require-restart="false">
     <id>com.liuzhihang.toolkit.mybatis-jump</id>
     <name>MyBatis Jump</name>
     <vendor email="liuzhihangs@qq.com" url="https://liuzhihang.com">Liu ZhiHang</vendor>
@@ -14,12 +14,13 @@
     <idea-version since-build="191.00"/>
 
     <extensions defaultExtensionNs="com.intellij">
-        <dom.fileMetaData implementation="com.liuzhihang.toolkit.description.MapperDescription" rootTagName="mapper"/>
+        <dom.fileDescription implementation="com.liuzhihang.toolkit.description.MapperDescription"/>
         <codeInsight.lineMarkerProvider language="JAVA"
                                         implementationClass="com.liuzhihang.toolkit.provider.Java2MapperLineMarkerProvider"/>
         <codeInsight.lineMarkerProvider language="XML"
                                         implementationClass="com.liuzhihang.toolkit.provider.Mapper2JavaLineMarkerProvider"/>
-        <definitionsScopedSearch implementation="com.liuzhihang.toolkit.search.MapperDefinitionSearch"/>
+        <definitionsSearch implementation="com.liuzhihang.toolkit.search.MapperDefinitionSearch"/>
+
         <localInspection language="XML" shortName="ToolkitMapperXmlInspection" enabledByDefault="true" level="ERROR"
                          displayName="Mapper xml inspection" groupName="Mybatis"
                          implementationClass="com.liuzhihang.toolkit.inspection.MapperXmlInspection"/>
